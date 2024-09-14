@@ -1,0 +1,657 @@
+use aula1309;
+show tables;
+
+DROP TABLE IF EXISTS `new_funcionarios`;
+
+CREATE TABLE `new_funcionarios` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `alunos` varchar(70) default NULL,
+  `salario` varchar(100) default NULL,
+  `idade` mediumint default NULL,
+  `regiao` varchar(50) default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Justin Robles","$4474.41",36,"Gaziantep"),
+  ("Carly Schroeder","$3772.36",72,"Bourgogne"),
+  ("Kenneth Blackburn","$7581.03",72,"North Region"),
+  ("Gay Gaines","$8105.29",62,"North Gyeongsang"),
+  ("Lucy Shields","$6177.37",24,"Luik"),
+  ("Damon Key","$6759.19",31,"Salzburg"),
+  ("Diana Gordon","$9302.59",57,"Mecklenburg-Vorpommern"),
+  ("Dominic Blevins","$1043.16",66,"São Paulo"),
+  ("Aimee Harrell","$7757.25",45,"Luxemburg"),
+  ("Craig Leon","$4167.79",28,"Liguria");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Madeline Cash","$7819.35",57,"Connecticut"),
+  ("Keith O'brien","$6353.09",28,"Papua"),
+  ("Bruce Robbins","$4375.45",41,"Hessen"),
+  ("Yasir Myers","$8442.80",70,"Kemerovo Oblast"),
+  ("Burke Rojas","$6117.92",75,"Ilocos Region"),
+  ("Fiona Chaney","$6109.42",24,"Central Region"),
+  ("Zelenia Glenn","$9575.14",20,"Arequipa"),
+  ("Judah Melton","$4333.41",28,"Rio Grande do Sul"),
+  ("Haley Callahan","$5438.33",63,"Île-de-France"),
+  ("Jordan Buck","$1126.83",46,"Loreto");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Timothy Huffman","$2873.83",44,"North-East Region"),
+  ("Molly Sanford","$9655.98",33,"Connacht"),
+  ("Willow Boyd","$1472.48",17,"Västra Götalands län"),
+  ("Azalia Clay","$2826.39",19,"Leningrad Oblast"),
+  ("Chancellor Rice","$9851.91",59,"Rheinland-Pfalz"),
+  ("Stacy Wilkerson","$1816.50",74,"Oyo"),
+  ("Graiden Chavez","$3066.15",70,"Cartago"),
+  ("Maxine England","$4380.92",79,"Dōngběi"),
+  ("Dillon Jefferson","$4920.90",75,"Piura"),
+  ("Ross Hoover","$3305.25",20,"Styria");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Yasir Holcomb","$2841.43",21,"Caquetá"),
+  ("Harper Farmer","$2088.56",50,"Katsina"),
+  ("Maile Ramsey","$6220.71",70,"Washington"),
+  ("Norman Beck","$5709.70",42,"Hà Nam"),
+  ("Imani Manning","$2867.59",22,"Kerala"),
+  ("Timon Abbott","$4384.12",66,"Gaziantep"),
+  ("Quinlan Hays","$9997.64",26,"Guanacaste"),
+  ("Harrison Sexton","$1617.90",43,"Australian Capital Territory"),
+  ("Noelle Rose","$2695.03",48,"Los Lagos"),
+  ("Quinn Blair","$3404.38",73,"Bengkulu");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Luke Lucas","$1556.15",46,"San José"),
+  ("Carissa Mcneil","$5625.63",40,"Lagos"),
+  ("Lani Edwards","$8931.42",44,"Champagne-Ardenne"),
+  ("Gemma Livingston","$2184.76",63,"Cusco"),
+  ("Cassady Crawford","$8952.79",47,"North Jeolla"),
+  ("Allen Berry","$3610.53",73,"Western Visayas"),
+  ("Quintessa Green","$5604.54",49,"Brandenburg"),
+  ("Aristotle Massey","$7263.24",56,"Ivano-Frankivsk oblast"),
+  ("Garrett Hunt","$7903.17",71,"Burgenland"),
+  ("Lynn Bean","$1340.88",45,"Gauteng");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("August Wiley","$5999.42",20,"Central Java"),
+  ("Robert Valentine","$5464.27",36,"Vĩnh Phúc"),
+  ("April Chapman","$3255.41",70,"Anambra"),
+  ("Yolanda Williamson","$7202.41",75,"Leinster"),
+  ("Helen Benson","$3083.51",52,"Huáběi"),
+  ("Macon Shepherd","$9494.50",19,"Cajamarca"),
+  ("Pamela Sutton","$8334.24",28,"South Chungcheong"),
+  ("Ebony Flynn","$7936.79",36,"Stirlingshire"),
+  ("Amity Rice","$4668.04",40,"Central Region"),
+  ("Erich James","$5918.22",67,"Västra Götalands län");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Meredith Skinner","$4073.15",74,"Jönköpings län"),
+  ("Shelly Flores","$3988.60",28,"Rio de Janeiro"),
+  ("Lee Quinn","$3480.45",45,"Đà Nẵng"),
+  ("Rowan Petersen","$8179.50",77,"Cartago"),
+  ("Joy Edwards","$5977.99",28,"Burgenland"),
+  ("Ralph Vaughn","$9701.08",36,"Loreto"),
+  ("Steel Haney","$3836.34",76,"Phú Yên"),
+  ("Naomi Olson","$8235.75",47,"North West"),
+  ("Raphael Church","$5745.64",32,"Munster"),
+  ("Kareem Fulton","$7697.86",37,"Antofagasta");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Kuame Tran","$6187.12",76,"Daman and Diu"),
+  ("Phelan Maldonado","$2045.13",63,"North Island"),
+  ("Nola Baxter","$9121.48",29,"Huáběi"),
+  ("Illana Cochran","$8139.04",32,"Inverness-shire"),
+  ("Isadora Shannon","$5099.06",51,"Kerala"),
+  ("Noble Mcmillan","$2966.79",25,"South Island"),
+  ("Paloma Baird","$2778.19",37,"Veneto"),
+  ("Tatum Brady","$1743.22",68,"Southeast Sulawesi"),
+  ("Brynn Bowen","$5470.68",41,"Ontario"),
+  ("Caleb Stevenson","$8869.49",55,"Henegouwen");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Abbot Buck","$1274.42",58,"Tarapacá"),
+  ("Armand Gibson","$5365.23",71,"Limburg"),
+  ("Destiny Rivas","$5809.56",74,"Languedoc-Roussillon"),
+  ("Brock Noel","$9311.35",27,"Loreto"),
+  ("Raven Wooten","$2292.35",27,"Arica y Parinacota"),
+  ("Caryn Bradford","$2532.36",55,"Queensland"),
+  ("Lillith Barnett","$3738.63",17,"Jönköpings län"),
+  ("Heather Fisher","$2862.55",26,"Liguria"),
+  ("Mallory Heath","$5095.11",21,"Carinthia"),
+  ("Naomi Barron","$1063.38",44,"Konya");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Igor Berg","$8467.02",53,"Zakarpattia oblast"),
+  ("Kerry Watkins","$1336.11",43,"Vienna"),
+  ("Tashya Barber","$7683.92",45,"Victoria"),
+  ("Norman Park","$3393.35",76,"Stockholms län"),
+  ("Christian Howe","$4877.12",55,"Rivers"),
+  ("Daria Hayden","$3769.40",39,"Australian Capital Territory"),
+  ("Mariko Stein","$6886.68",57,"Viken"),
+  ("Wanda Guerrero","$2987.73",72,"Viken"),
+  ("Kerry Hopper","$5199.92",26,"Delta"),
+  ("Evangeline Coleman","$7125.35",50,"Victoria");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Virginia Flynn","$2976.23",58,"Bắc Ninh"),
+  ("Denise Lucas","$3888.03",23,"Bayern"),
+  ("Vernon Potts","$7440.02",55,"Kyiv oblast"),
+  ("Malcolm Wiggins","$3892.57",38,"Ulster"),
+  ("Raja Gentry","$6090.99",78,"Heredia"),
+  ("Courtney Maxwell","$5183.83",62,"Gävleborgs län"),
+  ("Miranda Hutchinson","$4300.32",24,"Hatay"),
+  ("Josiah Grimes","$3243.98",64,"Nova Scotia"),
+  ("Elvis Terrell","$8319.88",16,"South Gyeongsang"),
+  ("Rudyard Farley","$9697.71",30,"Tasmania");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Charles Mclean","$6774.70",46,"Baja California"),
+  ("Craig Battle","$1637.77",68,"Central Region"),
+  ("Luke Payne","$5070.97",30,"Oost-Vlaanderen"),
+  ("Zephania Camacho","$7530.89",78,"Novgorod Oblast"),
+  ("Kamal Mooney","$7231.42",68,"Central Sulawesi"),
+  ("Tanner Perry","$8211.19",65,"Tambov Oblast"),
+  ("Bell Hobbs","$4066.15",48,"Chernihiv oblast"),
+  ("Giacomo Williams","$8066.66",48,"Riau Islands"),
+  ("Kelly Mcmillan","$1542.74",26,"Leinster"),
+  ("Leo Edwards","$2790.55",31,"North Sumatra");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Brady Harper","$4022.66",18,"Đồng Tháp"),
+  ("Tatyana Owens","$6039.31",58,"Limón"),
+  ("Astra Santana","$1414.63",18,"South Gyeongsang"),
+  ("Rinah Caldwell","$3528.17",26,"Kaduna"),
+  ("Lev Travis","$4542.98",63,"Pembrokeshire"),
+  ("Kylan Fry","$2309.65",57,"Tyrol"),
+  ("Nevada Sparks","$5904.54",32,"Loreto"),
+  ("Leilani Finley","$5761.02",16,"Punjab"),
+  ("Lionel Prince","$8164.33",28,"Bến Tre"),
+  ("Zenia Ingram","$4204.45",35,"Junín");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Vernon Simpson","$2702.01",50,"South Australia"),
+  ("Bert Townsend","$4435.10",66,"Tarapacá"),
+  ("Tatiana Massey","$5362.32",25,"Northern Territory"),
+  ("Ahmed David","$9978.15",23,"Central Region"),
+  ("Brandon Jacobson","$4785.53",61,"South Australia"),
+  ("Stephen Conner","$7702.87",43,"Andaman and Nicobar Islands"),
+  ("Ishmael Weiss","$4141.32",62,"South Island"),
+  ("Ava Norris","$9171.92",42,"Thái Bình"),
+  ("Preston Franco","$4087.52",43,"Paraná"),
+  ("Reuben Workman","$6973.10",76,"Zakarpattia oblast");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Ivory Garrett","$5296.43",72,"Dnipropetrovsk oblast"),
+  ("Anika Conrad","$8037.62",78,"Dōngběi"),
+  ("Fulton Serrano","$4784.51",26,"Styria"),
+  ("Colt Herring","$1529.39",67,"Trentino-Alto Adige"),
+  ("Chelsea Donovan","$8423.00",53,"Central Region"),
+  ("Zorita Chen","$4956.95",69,"Vĩnh Long"),
+  ("Oliver Casey","$5482.40",34,"Östergötlands län"),
+  ("Debra Love","$7209.47",66,"Maranhão"),
+  ("Cameron Morris","$5673.44",71,"Sucre"),
+  ("Carl Jimenez","$8350.61",68,"Provence-Alpes-Côte d'Azur");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Darrel Pitts","$4954.49",72,"Heredia"),
+  ("Bradley Greer","$9485.34",52,"Illes Balears"),
+  ("Yoshio Mays","$9995.56",30,"Agder"),
+  ("Marny Kennedy","$8667.88",39,"Vorarlberg"),
+  ("Allegra Gilmore","$2450.00",59,"Östergötlands län"),
+  ("Ayanna Hughes","$4802.32",65,"Buckinghamshire"),
+  ("Gabriel Olson","$6887.22",61,"Eastern Visayas"),
+  ("Lamar Webb","$2755.29",79,"Somerset"),
+  ("Orlando Schneider","$2090.79",56,"Goiás"),
+  ("Bryar Dodson","$9072.28",46,"Huáběi");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Lewis Douglas","$5492.92",32,"Heredia"),
+  ("Kareem Underwood","$8833.58",54,"Indiana"),
+  ("Mason Sandoval","$6620.99",50,"Alajuela"),
+  ("Colorado Gray","$5280.15",80,"Opolskie"),
+  ("Iona Rutledge","$4735.46",47,"Central Region"),
+  ("Sybill Stanton","$8927.54",77,"Benue"),
+  ("Martina Freeman","$9523.15",32,"Sakhalin Oblast"),
+  ("Dillon Lang","$6380.40",16,"Nariño"),
+  ("Leroy Sheppard","$5586.38",71,"West Sumatra"),
+  ("Lilah Sellers","$5960.81",18,"Sląskie");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Kennan Herman","$8849.25",68,"Västra Götalands län"),
+  ("Elmo Aguirre","$8095.06",20,"Cordillera Administrative Region"),
+  ("Rhona Kirkland","$9431.83",46,"Styria"),
+  ("Murphy Bradley","$5179.68",31,"Connacht"),
+  ("Autumn Grimes","$8323.47",74,"Metropolitana de Santiago"),
+  ("Joseph Nunez","$9432.28",68,"Yaroslavl Oblast"),
+  ("Idola Beasley","$9515.73",63,"Veneto"),
+  ("Reece Marsh","$2705.45",64,"Vienna"),
+  ("Remedios Strong","$9623.57",64,"Vienna"),
+  ("Amir Adkins","$8083.83",29,"Sverdlovsk Oblast");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Eaton Mejia","$7095.12",31,"Xīnán"),
+  ("Castor Wilder","$7427.48",19,"Omsk Oblast"),
+  ("Devin Harmon","$3543.43",68,"Małopolskie"),
+  ("Malik Glenn","$4126.76",53,"Pomorskie"),
+  ("Austin Moss","$5304.10",48,"Thanh Hóa"),
+  ("Kibo Huff","$9656.01",60,"North Maluku"),
+  ("Alan Craft","$4619.54",45,"Pays de la Loire"),
+  ("Travis Conrad","$7034.49",74,"North Island"),
+  ("Allistair Bright","$6682.11",54,"Central Visayas"),
+  ("Alvin Morrow","$2426.08",75,"Casanare");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Duncan Stout","$7358.41",70,"Bắc Giang"),
+  ("Tamekah Hicks","$2453.01",65,"Tabasco"),
+  ("Kermit Terry","$8805.93",37,"Aberdeenshire"),
+  ("Ronan Hartman","$4426.20",32,"Soccsksargen"),
+  ("Judith Holder","$4017.22",33,"Đắk Lắk"),
+  ("Whoopi Sims","$6548.22",51,"Sachsen-Anhalt"),
+  ("Destiny Leonard","$5560.58",22,"Arequipa"),
+  ("Indigo Klein","$4826.30",42,"Leinster"),
+  ("Morgan Cherry","$7533.77",79,"Cantabria"),
+  ("Rebekah Browning","$2963.45",56,"Overijssel");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Quinlan Kerr","$6913.08",40,"Aisén"),
+  ("Kirby Clay","$2321.99",47,"Tabasco"),
+  ("Zahir Fitzpatrick","$5871.43",63,"Sverdlovsk Oblast"),
+  ("Chase Santana","$3670.22",32,"Long An"),
+  ("Benjamin Charles","$1464.77",57,"Aisén"),
+  ("Isabelle Graham","$1350.64",25,"Madrid"),
+  ("Leo Jackson","$8378.09",19,"Hertfordshire"),
+  ("Alice Chapman","$2899.78",25,"Northern Territory"),
+  ("Dean Finch","$4800.17",42,"Volyn oblast"),
+  ("Jamalia Bright","$7933.54",71,"Northwest Territories");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Jordan Blake","$7303.12",74,"Northern Cape"),
+  ("Rebekah Hart","$8056.17",42,"Puntarenas"),
+  ("Francesca Austin","$9084.49",22,"Pondicherry"),
+  ("Liberty Riggs","$8951.73",44,"La Rioja"),
+  ("Kirby Henry","$3754.44",60,"Vĩnh Long"),
+  ("Edward Burt","$5032.45",63,"Utrecht"),
+  ("Reed Leon","$9807.97",55,"Västra Götalands län"),
+  ("Ori Dorsey","$9039.41",71,"Styria"),
+  ("Stuart Owen","$4301.51",63,"Limousin"),
+  ("Steven Livingston","$9908.84",66,"Guanacaste");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Xena Evans","$3487.00",61,"Central Visayas"),
+  ("Wyatt Petty","$3113.40",46,"Western Australia"),
+  ("Carter Henson","$5145.91",35,"Poltava oblast"),
+  ("Owen Benton","$4768.23",58,"South Australia"),
+  ("Tarik Howard","$8913.51",41,"Rostov Oblast"),
+  ("Kane Townsend","$9559.96",51,"Zuid Holland"),
+  ("Quamar Nielsen","$2280.39",23,"Kujawsko-pomorskie"),
+  ("Maryam Davidson","$1376.32",24,"Đồng Tháp"),
+  ("Fitzgerald Morrison","$3790.73",49,"Haryana"),
+  ("Caryn Guerrero","$9267.06",75,"Gauteng");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Colt Walters","$7421.90",16,"Phú Yên"),
+  ("Emerald Gill","$5262.46",38,"Ulster"),
+  ("Ali Reynolds","$3020.27",23,"Salzburg"),
+  ("Rana Bean","$4001.64",71,"Sucre"),
+  ("Noelle Fitzpatrick","$7965.73",23,"Maranhão"),
+  ("Yetta Noel","$7110.90",31,"Opolskie"),
+  ("Nell Hinton","$4092.24",65,"Alberta"),
+  ("Dominic Clarke","$9054.06",24,"Jharkhand"),
+  ("Malik Weber","$4108.37",62,"Basilicata"),
+  ("Finn Sexton","$5607.32",24,"North-East Region");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Quinlan Tate","$3372.09",54,"North Gyeongsang"),
+  ("Molly Stephenson","$9844.51",78,"Henegouwen"),
+  ("Prescott Solomon","$4112.37",64,"Ayrshire"),
+  ("Zelenia Stein","$2310.82",46,"South Island"),
+  ("Lunea English","$3411.61",60,"Hidalgo"),
+  ("Cody Ross","$2370.13",26,"North Chungcheong"),
+  ("Maxine Giles","$6177.16",76,"Östergötlands län"),
+  ("Wyatt Gilbert","$5090.00",61,"Vlaams-Brabant"),
+  ("Venus Merritt","$3331.55",63,"Yukon"),
+  ("Hayfa Randall","$6386.50",53,"Alaska");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Benedict Benson","$3578.72",46,"Kurgan Oblast"),
+  ("Kenneth Whitley","$7613.91",48,"La Libertad"),
+  ("Russell Waller","$5996.99",17,"Yukon"),
+  ("Cooper Russell","$2071.97",63,"Oost-Vlaanderen"),
+  ("Zena Hart","$4262.79",29,"New Brunswick"),
+  ("Allen Burch","$8517.55",43,"Bali"),
+  ("Ivor Norton","$8480.89",22,"Utrecht"),
+  ("Barbara Cooper","$3308.63",69,"Zaporizhzhia oblast"),
+  ("Noah Young","$9344.14",48,"Manisa"),
+  ("Shea Snyder","$5732.94",21,"Zeeland");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Guinevere Cote","$5596.37",23,"South Island"),
+  ("Amity Bass","$1996.52",76,"Ross-shire"),
+  ("Rajah Madden","$7367.89",20,"Konya"),
+  ("Paula Cochran","$4690.43",60,"Montana"),
+  ("Ainsley Mcguire","$4764.99",22,"Lubelskie"),
+  ("Noelani Ball","$3883.56",41,"Cordillera Administrative Region"),
+  ("Kareem Hayes","$7693.02",44,"Lakshadweep"),
+  ("Dalton Trujillo","$6045.07",71,"Morelos"),
+  ("Kalia Mcclain","$3171.22",27,"South Island"),
+  ("Dexter Pate","$4360.68",57,"Delhi");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Colin Mercer","$6918.68",32,"Đồng Nai"),
+  ("Jena Pugh","$2148.22",66,"Cordillera Administrative Region"),
+  ("Rebekah Ingram","$1892.62",32,"Jönköpings län"),
+  ("Karleigh Delgado","$3457.32",23,"Huádōng"),
+  ("Orlando Ashley","$9341.82",49,"Vĩnh Phúc"),
+  ("Bertha Neal","$6725.12",72,"Oregon"),
+  ("Priscilla Dale","$5478.99",31,"Munster"),
+  ("Vera Miller","$9666.35",54,"Chihuahua"),
+  ("Maia Savage","$7172.18",19,"Alabama"),
+  ("Marah Stevens","$3468.44",60,"Castilla - La Mancha");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Lesley Love","$4635.42",67,"Ternopil oblast"),
+  ("Kennan Lee","$7885.35",38,"San Luis Potosí"),
+  ("Autumn Fletcher","$9230.11",78,"Ternopil oblast"),
+  ("Hyacinth Odom","$3313.84",26,"Mizoram"),
+  ("Athena Santana","$2736.94",74,"Zhōngnán"),
+  ("Wynne Gilbert","$6657.17",68,"Volgograd Oblast"),
+  ("Nomlanga Ramsey","$1929.31",20,"San José"),
+  ("Kamal Patterson","$2383.29",62,"North Region"),
+  ("Howard Simmons","$2500.88",51,"Ohio"),
+  ("Burton Sullivan","$4664.79",55,"West Region");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Justina Ryan","$3769.80",36,"Novgorod Oblast"),
+  ("Jameson Townsend","$6481.44",43,"Alberta"),
+  ("Charlotte White","$8301.53",66,"North Region"),
+  ("Francis Wilcox","$1845.73",51,"Sonora"),
+  ("Reagan Mills","$1108.36",23,"Leinster"),
+  ("Hadassah Garrison","$9031.41",37,"Rio Grande do Sul"),
+  ("Nomlanga Mccall","$3897.35",51,"Cartago"),
+  ("Genevieve Olsen","$1062.43",68,"Alajuela"),
+  ("Kameko Doyle","$8085.15",51,"National Capital Region"),
+  ("Tatiana Ferguson","$6884.94",33,"Jönköpings län");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Colby Livingston","$2811.32",55,"Leinster"),
+  ("Cedric Frye","$6744.83",24,"Sindh"),
+  ("Fulton Guerrero","$7582.64",67,"Eastern Visayas"),
+  ("Russell Mccormick","$4563.43",34,"Adana"),
+  ("Alexandra Benson","$6184.82",44,"Khyber Pakhtoonkhwa"),
+  ("Ignatius Alvarado","$4725.55",78,"Daman and Diu"),
+  ("Francesca Snyder","$5147.91",53,"Rivne oblast"),
+  ("Hilary Whitehead","$7537.15",53,"Dalarnas län"),
+  ("Bertha Fleming","$5694.12",62,"North-East Region"),
+  ("Nayda Cortez","$5008.96",45,"Luhansk oblast");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Xyla Hudson","$1943.87",54,"Vichada"),
+  ("Jenette Harrison","$1138.38",68,"Đắk Nông"),
+  ("Rooney English","$6921.43",59,"Bremen"),
+  ("Patricia Turner","$6441.10",77,"Central Region"),
+  ("Ann Mathews","$7640.31",68,"Opolskie"),
+  ("Isadora Gay","$6755.20",43,"Zhōngnán"),
+  ("Carly Pena","$8061.48",66,"Imo"),
+  ("Flavia French","$1901.21",76,"FATA"),
+  ("Drew Wallace","$9135.69",44,"Dalarnas län"),
+  ("Ignacia Hebert","$9688.42",65,"Los Lagos");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Buckminster Knowles","$6449.61",50,"Sơn La"),
+  ("Brenden Mooney","$1146.02",75,"Trà Vinh"),
+  ("Meghan Hood","$1658.83",40,"Yucatán"),
+  ("Daquan Rocha","$8588.11",57,"Rheinland-Pfalz"),
+  ("Gwendolyn Wells","$9100.80",53,"Jammu and Kashmir"),
+  ("Ciara Lyons","$8490.62",31,"Liguria"),
+  ("Mariko Barry","$2131.07",46,"Riau"),
+  ("Quamar Moss","$9022.54",48,"Ulster"),
+  ("Kyla Flores","$8484.11",75,"Jönköpings län"),
+  ("Jasper Winters","$8755.52",23,"Ontario");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Allistair Puckett","$4753.92",50,"Rheinland-Pfalz"),
+  ("Cyrus Santos","$3960.54",30,"Oslo"),
+  ("Sebastian Carson","$7714.95",76,"Guanajuato"),
+  ("Bo Huffman","$9669.31",55,"Haute-Normandie"),
+  ("Laurel Cotton","$6089.39",80,"Novosibirsk Oblast"),
+  ("Warren Bird","$3259.82",49,"Franche-Comté"),
+  ("Joseph Decker","$2391.59",20,"Oyo"),
+  ("Geoffrey Robertson","$5772.65",22,"Belgorod Oblast"),
+  ("Christian Bruce","$9464.36",70,"Amazonas"),
+  ("Brock Schultz","$8714.94",36,"Västra Götalands län");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Micah Cook","$4622.10",38,"Dolnośląskie"),
+  ("Judith Hendricks","$2732.13",62,"Bihar"),
+  ("Matthew Duke","$7975.73",48,"Waals-Brabant"),
+  ("Bernard Giles","$8082.46",40,"Junín"),
+  ("Maite Richardson","$6006.71",24,"Tasmania"),
+  ("Baker Lester","$5108.38",18,"South Island"),
+  ("Anne Mathis","$9510.79",63,"Central Region"),
+  ("Kennedy Mckinney","$8923.06",50,"Connacht"),
+  ("Shad Decker","$2886.28",62,"Dōngběi"),
+  ("Micah Patel","$3382.05",54,"Trentino-Alto Adige");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Oliver Finch","$8125.61",30,"Cartago"),
+  ("Chancellor Daniel","$8950.39",42,"Benue"),
+  ("Judah Hatfield","$6605.62",21,"North Gyeongsang"),
+  ("Amethyst Madden","$9830.44",19,"Burgenland"),
+  ("Eliana Trevino","$7053.27",65,"Mecklenburg-Vorpommern"),
+  ("Murphy Bowen","$9019.96",32,"Vorarlberg"),
+  ("Finn Arnold","$9046.55",29,"Western Cape"),
+  ("Ashton Lyons","$6382.16",21,"Vorarlberg"),
+  ("Russell Washington","$8666.11",57,"Michigan"),
+  ("Laurel Kirkland","$3761.83",35,"Gangwon");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Darius Cruz","$3872.29",48,"Kahramanmaraş"),
+  ("Clinton Fischer","$5530.00",37,"Tarapacá"),
+  ("Steel Grimes","$1089.05",76,"Gävleborgs län"),
+  ("Xanthus Foley","$6687.93",35,"Dolnośląskie"),
+  ("Charity Arnold","$5348.79",60,"Comunitat Valenciana"),
+  ("Amanda Hammond","$7192.94",31,"Gangwon"),
+  ("Eleanor Manning","$6094.54",68,"Ninh Bình"),
+  ("Uriah Lopez","$6709.30",26,"Zhōngnán"),
+  ("Nicole Reyes","$5883.05",21,"Ancash"),
+  ("Mara Rodgers","$7744.91",32,"North Sulawesi");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Doris Pratt","$7260.83",26,"Lower Austria"),
+  ("Tana Luna","$8602.35",75,"Ilocos Region"),
+  ("Kareem Mckenzie","$4450.93",35,"Møre og Romsdal"),
+  ("Hiroko Workman","$8036.61",18,"South Island"),
+  ("Kelly Macias","$3240.04",49,"West Region"),
+  ("Hop Dillard","$5986.34",71,"Brandenburg"),
+  ("Cassidy Blankenship","$4543.12",65,"Guanajuato"),
+  ("Aaron Wise","$8476.38",19,"Eastern Cape"),
+  ("Asher Dunn","$7959.07",17,"Rogaland"),
+  ("Hilel O'connor","$5868.56",46,"Bauchi");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Eugenia Hooper","$1259.94",68,"Wielkopolskie"),
+  ("Conan Calderon","$4565.91",29,"Bauchi"),
+  ("Chadwick Franks","$9742.44",80,"Tyrol"),
+  ("Portia Barber","$9252.98",78,"Extremadura"),
+  ("Isabelle Chambers","$1378.47",44,"Berlin"),
+  ("Shelby Sloan","$8050.12",76,"Tasmania"),
+  ("Macaulay Barrera","$4165.00",33,"Bạc Liêu"),
+  ("Grant Mason","$4515.53",37,"Gävleborgs län"),
+  ("Todd Shepard","$2163.92",50,"Upper Austria"),
+  ("Brianna Booth","$5558.72",21,"Konya");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Jelani Snider","$9104.93",68,"Arequipa"),
+  ("Wayne Ray","$9970.67",55,"Västra Götalands län"),
+  ("Chandler Oneal","$9902.98",62,"Osun"),
+  ("Ralph Carey","$1532.16",75,"Aydın"),
+  ("Robert French","$5770.63",28,"Gauteng"),
+  ("Marsden Blackwell","$5478.47",66,"Balochistan"),
+  ("Anne Jimenez","$4851.99",17,"Limón"),
+  ("Petra Brock","$6757.77",19,"FATA"),
+  ("Camilla Hyde","$8290.55",18,"Kahramanmaraş"),
+  ("Channing Shepard","$9872.08",31,"Ancash");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Christopher Villarreal","$2169.85",17,"North Jeolla"),
+  ("Melvin Bond","$9930.20",20,"Catalunya"),
+  ("Edward Le","$4913.63",21,"Distrito Capital"),
+  ("Daquan Flores","$7825.85",78,"Vorarlberg"),
+  ("Brody Contreras","$6504.75",79,"Goiás"),
+  ("Christine Dickson","$6908.21",80,"Magallanes y Antártica Chilena"),
+  ("Vera Allen","$2877.75",31,"Ninh Thuận"),
+  ("Conan Hunter","$7934.75",67,"Belgorod Oblast"),
+  ("Alan Porter","$1524.13",17,"Leicestershire"),
+  ("Sheila Farley","$2438.38",62,"San José");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Sawyer Taylor","$9210.43",44,"Delta"),
+  ("Xanthus Poole","$3509.87",18,"Los Ríos"),
+  ("Fulton Velazquez","$4816.31",75,"Gaziantep"),
+  ("Minerva Gallagher","$5164.05",73,"Donetsk oblast"),
+  ("Harlan Sellers","$5728.40",74,"Georgia"),
+  ("Sydney Avila","$7444.11",36,"Atlántico"),
+  ("Richard Carrillo","$9415.68",22,"South Chungcheong"),
+  ("Tanisha Vang","$5615.06",43,"San José"),
+  ("Rigel Hartman","$1974.18",54,"South Gyeongsang"),
+  ("Leandra Riley","$6504.85",18,"Kirkcudbrightshire");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Constance Prince","$7756.57",72,"Paraíba"),
+  ("Kuame Hamilton","$6046.58",72,"Gangwon"),
+  ("Jayme Kemp","$4303.78",34,"Special Capital Region of Jakarta"),
+  ("Kessie Carey","$7578.21",32,"West-Vlaanderen"),
+  ("Zahir Jacobs","$2529.17",62,"Balochistan"),
+  ("Sara Walters","$7350.36",59,"Zachodniopomorskie"),
+  ("Aspen Lucas","$6045.28",21,"Leinster"),
+  ("Clark Peterson","$2121.57",49,"Connacht"),
+  ("Preston Tyson","$9303.06",57,"Zamboanga Peninsula"),
+  ("Mallory Richardson","$2869.50",67,"Vorarlberg");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Unity Cantrell","$9766.25",79,"Waals-Brabant"),
+  ("Cleo Fitzgerald","$8294.58",36,"Central Kalimantan"),
+  ("Rylee Harmon","$5154.15",39,"Guanacaste"),
+  ("Cheryl Kirkland","$4722.56",77,"Connacht"),
+  ("Mohammad Mayer","$6893.91",55,"East Kalimantan"),
+  ("Elaine Holman","$8072.95",16,"Warmińsko-mazurskie"),
+  ("Xyla Willis","$3508.37",38,"Viken"),
+  ("Travis Larson","$8164.03",20,"Basse-Normandie"),
+  ("Amaya Velasquez","$9997.63",49,"Munster"),
+  ("Alea Walton","$3712.02",69,"Vorarlberg");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Selma Sullivan","$6977.87",71,"Molise"),
+  ("Jermaine Maynard","$7243.34",16,"Andaman and Nicobar Islands"),
+  ("Autumn Pratt","$2636.53",73,"North Sumatra"),
+  ("Xavier Henry","$1260.96",48,"Sumy oblast"),
+  ("Cora Davenport","$2948.69",38,"Ivano-Frankivsk oblast"),
+  ("Justine Osborne","$6588.42",58,"North Island"),
+  ("Simon Vaughn","$2965.45",33,"North Gyeongsang"),
+  ("Myra Kim","$2233.29",71,"Azad Kashmir"),
+  ("Teegan Buck","$8038.63",56,"Gävleborgs län"),
+  ("Kirk Mcfarland","$6879.76",76,"Connacht");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Signe Cross","$8375.28",25,"Saskatchewan"),
+  ("Troy Foster","$1582.50",79,"New South Wales"),
+  ("Martena Zamora","$2427.94",54,"Marche"),
+  ("Roary Callahan","$4952.57",68,"South Island"),
+  ("Lisandra Matthews","$5966.06",78,"North Gyeongsang"),
+  ("Aspen Sullivan","$9762.80",74,"Puebla"),
+  ("Hyatt Contreras","$3866.20",41,"Gloucestershire"),
+  ("Wesley Rhodes","$1822.33",55,"Imo"),
+  ("Nigel Gray","$2088.81",63,"Zamboanga Peninsula"),
+  ("Tyler Ray","$7842.53",59,"Imo");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Francis Brennan","$1325.55",68,"Ternopil oblast"),
+  ("Laurel Cantu","$4609.58",46,"Molise"),
+  ("Shaine Mccoy","$8864.54",68,"Leinster"),
+  ("Maxwell Watts","$8621.86",62,"Castilla y León"),
+  ("Brett Duran","$8417.83",48,"Sutherland"),
+  ("Beatrice Decker","$6255.38",22,"Sikkim"),
+  ("Shelby Collins","$5931.39",33,"Gävleborgs län"),
+  ("Virginia Lott","$5255.62",74,"Kocaeli"),
+  ("Orli Wilcox","$5198.47",25,"Friuli-Venezia Giulia"),
+  ("Joseph Mendez","$8043.20",55,"Huádōng");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Kevin Mason","$9856.45",45,"Sachsen"),
+  ("Leigh Cline","$2621.92",36,"Aragón"),
+  ("Kuame Arnold","$1310.06",75,"Chhattisgarh"),
+  ("Emi Hardy","$7762.94",25,"Gelderland"),
+  ("Alice Carrillo","$8129.88",65,"Derbyshire"),
+  ("Mia Best","$9146.40",26,"Ulster"),
+  ("Eric Mccullough","$6971.74",73,"Opolskie"),
+  ("Lani Reid","$7783.36",80,"Khyber Pakhtoonkhwa"),
+  ("Charles Jarvis","$6913.44",33,"Orenburg Oblast"),
+  ("Madison Harding","$6720.88",28,"Poitou-Charentes");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Alfonso Martinez","$6487.93",18,"Hatay"),
+  ("Zachary Romero","$4572.34",72,"North Chungcheong"),
+  ("Sasha Patton","$2934.20",65,"Los Ríos"),
+  ("Daniel Rowe","$2699.11",42,"Nuevo León"),
+  ("Bevis Conner","$8384.71",79,"Västra Götalands län"),
+  ("Leroy Burks","$5271.39",39,"Luik"),
+  ("Rinah Erickson","$4083.13",34,"Gilgit Baltistan"),
+  ("Hayes Le","$9597.42",77,"Bangsamoro"),
+  ("Ocean Collins","$3568.31",40,"Tiền Giang"),
+  ("Lillith Jacobson","$7910.96",76,"Gävleborgs län");
+INSERT INTO `new_funcionarios` (`alunos`,`salario`,`idade`,`regiao`)
+VALUES
+  ("Abel Williams","$3519.00",53,"South Chungcheong"),
+  ("Alfreda Wilder","$8481.43",38,"Lambayeque"),
+  ("Logan Crane","$8845.99",41,"Australian Capital Territory"),
+  ("Ainsley Becker","$2887.53",44,"West Sumatra"),
+  ("Isadora Hendrix","$3413.24",44,"Vaupés"),
+  ("Roth Woodward","$5369.61",75,"Andhra Pradesh"),
+  ("Martin Schwartz","$8666.68",50,"Nova Scotia"),
+  ("Germane Gomez","$7489.34",73,"Nunavut"),
+  ("Hedley Romero","$6859.23",76,"San José"),
+  ("Slade Long","$8806.00",53,"Zachodniopomorskie");
+
+select * from new_funcionarios limit 10;
+
+SELECT 
+    *
+FROM
+    new_funcionarios
+WHERE
+    idade = (SELECT 
+            MAX(idade)
+        FROM
+            new_funcionarios)
+        OR idade = (SELECT 
+            MIN(idade)
+        FROM
+            new_funcionarios)
+ORDER BY idade ASC;
+
+/*------*/
+
+SELECT 
+    *
+FROM
+    new_funcionarios
+WHERE
+    idade IN (
+            (SELECT 
+                    MAX(idade)
+                FROM
+                    new_funcionarios)
+                , (SELECT 
+                    MIN(idade)
+                FROM
+                    new_funcionarios))ORDER BY idade ASC; 
+                    
+select sum(substring(salario,2,10)) as "Total vslor salarios" from new_funcionarios where idade=16;
+
+select  count(concat(alunos, " ", "alunos")) as "Total de Alunos" from new_funcionarios where idade=16;
+
+select * from new_funcionarios;
+select regiao,count(*) as contagem ,sum(substring(salario,2,10)) as salario  from new_funcionarios where regiao= regiao group by regiao ;
+
+
